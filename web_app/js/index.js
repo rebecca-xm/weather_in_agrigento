@@ -18,7 +18,7 @@ mostraComuni.addEventListener('change', function () {
       const descValue = data['weather'][0]['description'];
 
       main.innerHTML = nameValue;
-      temp.innerHTML = tempValue + "°C";
+      temp.innerHTML = parseInt(tempValue) + "°C";
       desc.innerHTML = descValue;
     })
 })
