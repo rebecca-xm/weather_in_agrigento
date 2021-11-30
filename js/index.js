@@ -22,6 +22,6 @@ mostraComuni.addEventListener('change', function () {
       main.innerHTML = nameValue;
       temp.innerHTML = parseInt(tempValue) + " °C";
       desc.innerHTML = descValue;
-      hum.innerHTML = humValue + " %";
+      hum.innerHTML = "humidity: " + humValue + " %";
     })
 })
