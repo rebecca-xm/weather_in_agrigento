@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather in Agrigento</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather in Agrigento</title>
 </head>
+<header>
+  <h1>Weather in Agrigento</h1>
+</header>
+
 <body>
-    <div class="select__wrapper">
-        <select class="selectComune" id="selectComune"></select>
+  <div class="container">
+    <!-- <div class="select__wrapper">
+
+    </div> -->
+    <div class="card">
+      <h1 class="name" id="name"></h1>
+      <p class="temp"></p>
+      <p class="desc"></p>
+      <p class="hum"></p>
+      <select class="selectComune" id="selectComune"></select>
     </div>
-    <div class="container">
-        <div class="card">
-          <h1 class="name" id="name"></h1>
-          <p class="temp"></p>
-          <p class="desc"></p>
-        </div>
-      </div>
-    <script type="module" src="js/index.js"></script>
+  </div>
+  <script type="module" src="js/index.js"></script>
 </body>
+
 </html>
