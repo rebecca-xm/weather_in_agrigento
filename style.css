@@ -102,3 +102,38 @@ footer a:link, a:active,
 a:visited {
     color: white;
 }
+
+/* MOBILE VERSION */
+@media all and (max-width: 600px) {
+
+    header {
+        margin: 0;
+    }
+
+
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    label {
+        display: none;
+    }
+
+    .container, .select__wrapper{
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 200px;
+        width: 300px;
+
+        margin: -100px -170px;
+    }
+
+    /* footer */
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+}
