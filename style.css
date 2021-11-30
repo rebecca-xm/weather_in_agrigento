@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Exo:wght@500&display=swap');
+
+header {
+    background-color: black;
+    font-family: 'Exo', sans-serif;
+    color: white;
+
+    padding: 10px;
+
+    opacity: 0.9;
+}
+
+header h1 {
+    margin-left: 10px;
+}
+
+body {
+    background: url(weather_in_agrigento.png);
+    background-size: cover;
+
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 1%;
+    
+    background-color: black;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+
+    height: 300px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px; 
+    margin-top: 140px;
+    padding: 20px;
+
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+span {
+    margin-left: 20px;
+}
+
+.selectComune {
+    background-color: black;
+    font-family: 'Exo', sans-serif;
+    font-size: 15px;
+    color: white;
+
+    margin-left: 5px;
+    height: 30px;
+    width: 250px;
+}
+
+.card h1 {
+    text-align: end;
+}
+
+.card p {
+    font-size: 20px;
+    text-align: end;
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    opacity: 0.9;
+}
+
+footer p {
+    font-family: 'Exo', sans-serif;
+    font-size: 10px;
+    color: #fff;
+
+    text-align: center;
+}
+
+footer a:link, a:active,
+a:visited {
+    color: white;
+}
