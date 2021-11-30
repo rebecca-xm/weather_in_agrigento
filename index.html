@@ -9,15 +9,19 @@
   <title>Weather in Agrigento</title>
 </head>
 <header>
-  <h1>Weather in Agrigento</h1>
+  <div class="header__wrapper">
+    <div class="header">
+      <h1>Weather in Agrigento</h1>
+    </div>
+    <div class="select__wrapper">
+      <label for="selectComune">Seleziona un comune</label>
+      <select class="selectComune" id="selectComune"></select>
+    </div>
+  </div>
 </header>
 
 <body>
   <div class="container">
-    <div class="select__wrapper">
-      <label for="selectComune">Seleziona un comune: </label>
-      <select class="selectComune" id="selectComune"></select>
-    </div>
     <div class="card">
       <h1 class="name" id="name"></h1>
       <p class="temp"></p>
@@ -25,6 +29,7 @@
       <p class="hum"></p>
     </div>
   </div>
+
   <script type="module" src="js/index.js"></script>
 
 </body>
