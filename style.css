@@ -1,66 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Exo:wght@500&display=swap');
 
-.header__wrapper {
-    display: flex;
-    height: 100px;
-    background-color: black;
-    font-family: 'Exo', sans-serif;
-    color: white;
-
-    opacity: 0.9;
-}
-
-.header {
-    width: 500px; 
-    margin-left: 30px;
-}
-
-.select__wrapper {
-    width: 500px;  
-    margin-top: 30px;
-    margin-left: auto; 
+*{
+    box-sizing: border-box;
 }
 
 body {
     background: url(weather_in_agrigento.png);
     background-size: cover;
+    font-family: 'Exo', sans-serif;
+
+    margin: 0;
+    padding: 0;
 
     height: 100vh;
-    margin: 0;
 }
 
-.container {
-    position: absolute;
-    display: inline-flex;
-    flex-direction: column;
-    border-radius: 1%;
-    
-    background-color: black;
-    font-family: 'Exo', sans-serif;
-    color: #fff;
+/* HEADER */
 
-    height: 300px;
-    width: 600px;
-    left: 50%;
-    margin-left: -300px; 
-    margin-top: 140px;
-    padding: 20px;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: black;
+    color: white;
+
+    padding: 0 2%;
 
     opacity: 0.9;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+header .header, header .select__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.select__wrapper label {
+    padding-right: 10px;
+}
+
+.select__wrapper select {
+    border-radius: 2px;
+}
+
+.selectComune {
+    background-color: black;
+    color: white;
+}
+
+/* MAIN */
+
+.card__wrapper {
+    display: flex;
+    background: black;
+    flex-direction: column;
+    color: white;
+    border-radius: 2%;
+
+    margin: 10% 35%;
+    padding: 2%;
+    border: 2px solid black;
+
+    opacity: 0.9;
 }
 
 .card {
-    margin: 50px;
+    text-align: center;
 }
 
 .modal {
     /* border: 2px solid white; */
     font-size: 18px;
-    width: 100%;
     text-align: center;
-
-    margin-top: -20px;
 }
 
 hr {
@@ -69,34 +79,12 @@ hr {
     background-image: linear-gradient(to right, rgba(255,255,255, 0.5), rgba(255,255,255, 0.9), rgba(255,255,255, 0.5));
 }
 
-label {
-    margin-top: 3px;
-}
-
-.selectComune {
-    background-color: black;
-    font-family: 'Exo', sans-serif;
-    font-size: 15px;
-    color: white;
-
-    margin-left: 10px;
-    height: 30px;
-    width: 250px;
-}
-
-.card h1 {
-    text-align: center;
-}
-
-.card p {
-    font-size: 20px;
-    text-align: center;
-}
+/* FOOTER */
 
 footer {
     background-color: black;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
 
     opacity: 0.9;
@@ -115,80 +103,37 @@ a:visited {
     color: white;
 }
 
-/* MOBILE VERSION */
-@media all and (max-width: 990px) {
+/* RESPONSIVE */
 
-    .header__wrapper {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-
-        flex-grow: 1;
-        width: 100%;
-
-        padding: 20px;
-        margin: 0;
+@media screen and (max-width: 800px) {
+    header{
+        padding: 20px 20px;
     }
 
-    .header h1 {
-        margin-top: 25px;
+    header h1 {
         font-size: 20px;
     }
 
-    .select__wrapper {
-        font-size: 15px;
-        width: 200px;
-        margin: 0 20px;
+    header .select__wrapper{
+        flex-direction: column;
+        align-items: flex-end;
     }
 
-    body {
-        font-size: 16px;
-        line-height: 24px;
+    .select__wrapper label{
+        text-align: right;
+        padding-right: 0px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+
     }
 
-    label {
-        display: none;
-    }
-
-    .container {
-        /* display: block;
-
-
-
-        margin: 0; */
-        display: block;
-        top: 50px;
-        height: 500;
-        width: 200px;
-        margin: 0;
-        margin-top: 150px;
-        margin-left: -120px;
-
+    .card__wrapper {
+        max-width: 800px;
+        margin: 30% 0;
     }
 
     .modal {
-        background-color: black;
-        border-radius: 1%;
-        font-size: 10px;
-        margin-top: -120px;
-        margin-left: -100px;
-        padding: 10px 90px;
-    }
-
-    .card h1 {
-        margin-left: -15px;
-        font-size: 40px;
-    }
-
-    .card p {
-        font-family: 'Exo 2', sans-serif;
-        font-size: 25px;
-
-    }
-
-    /* footer */
-    footer {
-        margin: 0;
-        padding: 0;
+        font-size: 15px;
     }
 }
