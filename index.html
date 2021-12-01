@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="style.css">
   <title>Weather in Agrigento</title>
 </head>
-<header>
-  <div class="header__wrapper">
+
+<body>
+  <header>
     <div class="header">
       <h1>Weather in Agrigento</h1>
     </div>
@@ -17,34 +18,34 @@
       <label for="selectComune">Seleziona un comune</label>
       <select class="selectComune" id="selectComune"></select>
     </div>
-  </div>
-</header>
-
-<body>
-  <div class="container">
-    <div class="card">
+  </header>
+  <main>
+    <div class="card__wrapper">
       <div class="modal">
-        <p><h2>Welcome to Weather in Agrigento!</h2>
-          To consult the weather forecast of a specific town, <br />
-          use the dropdown menu in the upper right corner of the page.
-          <hr>
-          Per consultare le previsioni meteo di uno specifico comune, <br />
-          utilizza il menu a tendina posto in alto a destra.
+        <p>
+        <h2>Welcome to Weather in Agrigento!</h2>
+        To consult the weather forecast of a specific town, <br />
+        use the dropdown menu in the upper right corner of the page.
+        <hr>
+        Per consultare le previsioni meteo di uno specifico comune, <br />
+        utilizza il menu a tendina posto in alto a destra.
         </p>
       </div>
-      <h1 class="name" id="name"></h1>
-      <p class="temp"></p>
-      <p class="desc"></p>
-      <p class="hum"></p>
+      <div class="card">
+        <h2 class="name" id="name"></h2>
+          <p class="temp"></p>
+          <p class="desc"></p>
+          <p class="hum"></p>
+          <p class="feels"></p>
+      </div>
     </div>
-  </div>
 
-  <script type="module" src="js/index.js"></script>
-
+  </main>
+  <footer>
+    <p><span>Copyright 2021 - Edgemony -</span> <a href="https://www.linkedin.com/in/rebecca-mollica-635490223/"
+        target="_blank">Rebecca Mollica</a></p>
+  </footer>
 </body>
-<footer>
-  <p><span>Copyright 2021 - Edgemony -</span> <a href="https://www.linkedin.com/in/rebecca-mollica-635490223/"
-      target="_blank">Rebecca Mollica</a></p>
-</footer>
 
+<script type="module" src="js/index.js"></script>
 </html>
