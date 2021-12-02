@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.h1_link {
+    text-decoration: none;
+}
+
 body {
     background: url(weather_in_agrigento.png);
     background-size: cover;
