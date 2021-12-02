@@ -3,7 +3,6 @@ import { comuni } from "./data.js";
 const mostraComuni = document.getElementById("selectComune");
 const main = document.querySelector('#name');
 const temp = document.querySelector('.temp');
-const desc = document.querySelector('.desc');
 const hum = document.querySelector('.hum');
 
 mostraComuni.innerHTML = comuni.reduce((options, { value, name }) =>
@@ -16,13 +15,17 @@ mostraComuni.addEventListener('change', function () {
     .then((data) => {
       const tempValue = data['main']['temp'];
       const nameValue = data['name'];
-      const descValue = data['weather'][0]['description'];
+      const { icon, description } = data['weather'][0];
       const humValue = data['main']['humidity'];
+      const { speed } = data['wind'];
+
 
       main.innerHTML = nameValue;
       temp.innerHTML = parseInt(tempValue) + " °C";
-      desc.innerHTML = descValue;
-      hum.innerHTML = "humidity: " + humValue + " %";
+      hum.innerHTML = "Humidity: " + humValue + " %";
+      document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + ".png";
+      document.querySelector(".desc").innerHTML = description;
+      document.querySelector(".wind").innerText = "Wind speed: " + speed + "km/h";
     })
     const modal = document.querySelector(".modal");
     modal.style.display = "none";
