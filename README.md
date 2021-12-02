@@ -5,7 +5,7 @@
 So far, the available info displayed are the current temperature, a description of the weather conditions in that given moment (the icon displayed will ensure its comprehension even for non-English speakers) and some additional details, such as the humidity percentage and the speed of the wind.</br>
 Although the resposive design has yet to be perfectioned, this web app is also accessible from mobile devices!</p>
 <br>
-<h3>Language used:</h3>
+<h3>Languages used:</h3>
 
 <ul>HTML </ul>
 <ul>CSS</ul>
